@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Mart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#fashion">👗 Fashion</a></li>
+            <li><a class="dropdown-item" href="#electronics">🔊 Electronics</a></li>
+            <li><a class="dropdown-item" href="#shoes">👟 Shoes</a></li>
+            <li><a class="dropdown-item" href="#accessories">👜 Accessories</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#fruits">🍎 Fruits</a></li>
+            <li><a class="dropdown-item" href="#vegetables">🥦 Vegetables</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <span class="hero-badge">✨ New season • Fresh picks</span>
+                    <h1 class="hero-title display-5">My Mart brings style, speed, and smart shopping together in one beautiful experience. 🛍️</h1>
+                    <p class="hero-text mt-4">Discover modern essentials, handpicked favorites, and everyday upgrades with premium presentation and effortless browsing.</p>
+                    <div class="mt-4 d-flex flex-wrap gap-3">
+                        <a href="#products" class="btn btn-primary btn-lg">Shop now</a>
+                        <a href="#why-shop" class="btn btn-outline-secondary btn-lg">Why choose us</a>
+                    </div>
+                    <div class="hero-stats mt-4 d-flex flex-wrap gap-4">
+                        <div>
+                            <strong>4.9/5</strong>
+                            <div class="text-muted small">Loved by shoppers</div>
+                        </div>
+                        <div>
+                            <strong>24h</strong>
+                            <div class="text-muted small">Express delivery</div>
+                        </div>
+                        <div>
+                            <strong>1000+</strong>
+                            <div class="text-muted small">Curated products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual overflow-hidden rounded-4 shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="Stylish shopping experience" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="categories" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <p class="section-tag">🗂️ Browse</p>
+                    <h2 class="h3 mb-0">Shop by category</h2>
+                </div>
+                <a href="#products" class="text-decoration-none fw-semibold">See all products</a>
+            </div>
+            <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-6">
+                <div class="col">
+                    <a href="#fashion" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">👗</div>
+                            <div class="mt-2 fw-semibold text-dark">Fashion</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#electronics" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">🔊</div>
+                            <div class="mt-2 fw-semibold text-dark">Electronics</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#shoes" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">👟</div>
+                            <div class="mt-2 fw-semibold text-dark">Shoes</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#accessories" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">👜</div>
+                            <div class="mt-2 fw-semibold text-dark">Accessories</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#fruits" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">🍎</div>
+                            <div class="mt-2 fw-semibold text-dark">Fruits</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#vegetables" class="text-decoration-none">
+                        <div class="card p-3 text-center h-100">
+                            <div class="fs-1">🥦</div>
+                            <div class="mt-2 fw-semibold text-dark">Vegetables</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="products">
+        <section id="fashion" class="py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">✨ Fashion products</p>
+                    <h2 class="h3 mb-0">Popular picks for every style 🌟</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-1">
+                            <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Blue skirt">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Bestseller</span>
+                                    <h5 class="card-title mt-3">Black skirt</h5>
+                                    <p class="card-text text-muted small">A versatile piece that pairs beautifully with casual and dressy tops.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$89</span>
+                                    <div>
+                                        <a href="#details-product-1" class="btn btn-outline-primary btn-sm">Details</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-2">
+                           <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Green Shirt">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">New arrival</span>
+                                    <h5 class="card-title mt-3">White Shirt</h5>
+                                    <p class="card-text text-muted small">A fresh take on a classic staple for a modern look.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$149</span>
+                                    <div>
+                                        <a href="#details-product-2" class="btn btn-outline-primary btn-sm">Details</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="electronics" class="py-5 bg-light">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">🔊 Tech & Devices</p>
+                    <h2 class="h3 mb-0">Cutting edge electronics</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-3">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Wireless headphones"> 
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Trending</span>
+                                    <h5 class="card-title mt-3">Wireless Headphones</h5>
+                                    <p class="card-text text-muted small">Immerse yourself in rich sound with noise-canceling technology.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$120</span>
+                                    <div>
+                                        <a href="#details-product-3" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-4">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Smart watch">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Smart pick</span>
+                                    <h5 class="card-title mt-3">Pulse Smartwatch</h5>
+                                    <p class="card-text text-muted small">Track your day in style with premium wellness features.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$199</span>
+                                    <div>
+                                        <a href="#details-product-4" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shoes" class="py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">👟 Step in Style</p>
+                    <h2 class="h3 mb-0">Premium Footwear Lineup</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-5">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Leather Shoes">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Editor’s choice</span>
+                                    <h5 class="card-title mt-3">Leather Shoes</h5>
+                                    <p class="card-text text-muted small">Classic craftsmanship meets modern comfort for all-day wear.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$79</span>
+                                    <div>
+                                        <a href="#details-product-5" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-6">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sneakers">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Limited</span>
+                                    <h5 class="card-title mt-3">Sneakers</h5> 
+                                    <p class="card-text text-muted small">A versatile pair that blends sporty style with everyday comfort.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$249</span>
+                                    <div>
+                                        <a href="#details-product-6" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-7">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Colorful sneakers">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">🛒 Hot deal</span>
+                                    <h5 class="card-title mt-3">Color Pop Runner</h5>
+                                    <p class="card-text text-muted small">Bright, light, and made for confident everyday movement.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$95</span>
+                                    <div>
+                                        <a href="#details-product-7" class="btn btn-outline-primary btn-sm">Details</a>
+   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accessories" class="py-5 bg-light">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">👜 Premium Accents</p>
+                    <h2 class="h3 mb-0">The Perfect Accessories</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 product-card" id="product-8">
+                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Luxury perfume">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">🌸 Fresh vibe</span>
+                                    <h5 class="card-title mt-3">Velvet Bloom</h5>
+                                    <p class="card-text text-muted small">A soft floral fragrance that feels elegant and uplifting.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$64</span>
+                                    <div>
+                                        <a href="#details-product-8" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 product-card" id="product-9">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Lifestyle accessory">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">✨ Premium</span>
+                                    <h5 class="card-title mt-3">Luna Glasses</h5>
+                                    <p class="card-text text-muted small">A chic frame that adds instant polish to any outfit.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$110</span>
+                                    <div>
+                                        <a href="#details-product-9" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fruits" class="py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">🍎 Organic & Sweet</p>
+                    <h2 class="h3 mb-0">Fresh Fruits Selection</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-10">
+                            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Fresh Strawberries">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Handpicked</span>
+                                    <h5 class="card-title mt-3">Organic Strawberries</h5>
+                                    <p class="card-text text-muted small">Sweet, juicy, and packed with vitamins straight from the farm.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$4.99</span>
+                                    <div>
+                                        <a href="#details-product-10" class="btn btn-outline-primary btn-sm">Details</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-11">
+                            <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sweet Pineapples">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Tropical</span>
+                                    <h5 class="card-title mt-3">Ripe Pineapple</h5>
+                                    <p class="card-text text-muted small">Perfectly ripened golden pineapples with absolute premium sweetness.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$3.50</span>
+                                    <div>
+                                        <a href="#details-product-11" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vegetables" class="py-5 bg-light">
+            <div class="container">
+                <div class="mb-4">
+                    <p class="section-tag">🥦 Crisp & Healthy</p>
+                    <h2 class="h3 mb-0">Garden Vegetables Selection</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-12">
+                            <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Fresh Broccoli">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Nutrient Rich</span>
+                                    <h5 class="card-title mt-3">Fresh Crunchy Broccoli</h5>
+                                    <p class="card-text text-muted small">Vibrant green crisp crowns full of health benefits and fiber.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$2.49</span>
+                                    <div>
+                                        <a href="#details-product-12" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 product-card" id="product-13">
+                            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Organic Tomatoes">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="product-badge">Farm Picked</span>
+                                    <h5 class="card-title mt-3">Vine Tomatoes</h5>
+                                    <p class="card-text text-muted small">Juicy, flavorful red tomatoes grown in optimal sunshine environments.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3 gap-2">
+                                    <span class="fw-bold text-primary fs-5">$1.99</span>
+                                    <div>
+                                        <a href="#details-product-13" class="btn btn-outline-primary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="why-shop" class="py-5 premium-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-uppercase text-primary fw-semibold mb-2">💡 Why shop with us</p>
+                <h2 class="h3">Experience convenience, quality, and care. 💖</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 premium-card border-0 rounded-4">
+                        <div class="card-body p-4">
+                            <div class="premium-icon">🚚</div>
+                            <h5 class="card-title mt-3">Fast, reliable delivery</h5>
+                            <p class="card-text text-muted">Get your order quickly with dependable shipping and live order tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 premium-card border-0 rounded-4">
+                        <div class="card-body p-4">
+                            <div class="premium-icon">💬</div>
+                            <h5 class="card-title mt-3">Premium customer support</h5>
+                            <p class="card-text text-muted">Enjoy friendly help, easy returns, and a smooth shopping experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 premium-card border-0 rounded-4">
+                        <div class="card-body p-4">
+                            <div class="premium-icon">⭐</div>
+                            <h5 class="card-title mt-3">Curated quality selection</h5>
+                            <p class="card-text text-muted">Discover top-rated essentials chosen for style, durability, and value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-tag">🌟 Customer reviews</p>
+                <h2 class="h3 mb-0">Loved by our shoppers</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 review-card">
+                        <div class="card-body p-4">
+                            <div class="fw-bold text-warning">★★★★★</div>
+                            <p class="mt-3 mb-3">“The experience feels premium from start to finish. Delivery was super fast and the support team was amazing.”</p>
+                            <strong>Sarah M.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 review-card">
+                        <div class="card-body p-4">
+                            <div class="fw-bold text-warning">★★★★★</div>
+                            <p class="mt-3 mb-3">“Beautiful layout, great products, and everything is easy to find. I shop here every week.”</p>
+                            <strong>Omar K.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 rounded-4 review-card">
+                        <div class="card-body p-4">
+                            <div class="fw-bold text-warning">★★★★★</div>
+                            <p class="mt-3 mb-3">“A polished site with thoughtful details. I especially love the curated picks and quick checkout.”</p>
+                            <strong>Nancy L.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 premium-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5">
+                    <p class="section-tag">📩 Contact us</p>
+                    <h2 class="h3 mb-3">Let’s make your next order even easier</h2>
+                    <p class="text-muted">Have a question, special request, or feedback? We’d love to hear from you.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card border-0 rounded-4 p-4 contact-card">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Your name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email address</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="Tell us how we can help"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="details-product-1" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-1" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Blue skirt">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Bestseller</span>
+                    <h3 class="fw-bold mt-2">Blue Skirt</h3>
+                    <h4 class="text-primary fw-bold">$89.00</h4>
+                    <p class="text-muted mt-3">A versatile piece that pairs beautifully with casual and dressy tops. Crafted with soft organic cotton blend for long-lasting comfort.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>My Mart Apparel</td></tr>
+                            <tr><th scope="row">Material</th><td>100% Organic Cotton</td></tr>
+                            <tr><th scope="row">Sizes</th><td>S, M, L, XL</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-2" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-2" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Green Shirt">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">New Arrival</span>
+                    <h3 class="fw-bold mt-2">Green Shirt</h3>
+                    <h4 class="text-primary fw-bold">$149.00</h4>
+                    <p class="text-muted mt-3">A fresh take on a classic staple for a modern look. Lightweight, breathable linen ideal for everyday tailored elegance.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>My Mart Tailored</td></tr>
+                            <tr><th scope="row">Material</th><td>Breathable Linen Blend</td></tr>
+                            <tr><th scope="row">Sizes</th><td>M, L, XL</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-3" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-3" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Wireless Headphones">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Trending Tech</span>
+                    <h3 class="fw-bold mt-2">Wireless Headphones Pro</h3>
+                    <h4 class="text-primary fw-bold">$120.00</h4>
+                    <p class="text-muted mt-3">Immerse yourself in studio sound with active noise-cancellation, custom EQ tuning, and up to 40 hours battery life.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>CubTech Sound</td></tr>
+                            <tr><th scope="row">Connectivity</th><td>Bluetooth 5.3 / AUX</td></tr>
+                            <tr><th scope="row">Battery Life</th><td>40 Hours Continuous</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-4" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-4" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Pulse Smartwatch">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Smart Pick</span>
+                    <h3 class="fw-bold mt-2">Pulse Smartwatch</h3>
+                    <h4 class="text-primary fw-bold">$199.00</h4>
+                    <p class="text-muted mt-3">Track your day in style with health metrics, sleep tracking, heart rate monitoring, and 7-day battery life.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>CubTech Wearables</td></tr>
+                            <tr><th scope="row">Display</th><td>44mm AMOLED Touchscreen</td></tr>
+                            <tr><th scope="row">Waterproof</th><td>50m (5 ATM)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-5" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-5" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Leather Shoes">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Editor’s Choice</span>
+                    <h3 class="fw-bold mt-2">Leather Shoes</h3>
+                    <h4 class="text-primary fw-bold">$79.00</h4>
+                    <p class="text-muted mt-3">Classic Italian leather craftsmanship combined with ergonomically designed insoles for day-long comfort.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>My Mart Kicks</td></tr>
+                            <tr><th scope="row">Material</th><td>Full-Grain Leather</td></tr>
+                            <tr><th scope="row">Sizing</th><td>US 7 - US 13</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-6" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-6" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Sneakers">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Limited Edition</span>
+                    <h3 class="fw-bold mt-2">Pro Sneakers</h3>
+                    <h4 class="text-primary fw-bold">$249.00</h4>
+                    <p class="text-muted mt-3">Engineered air-cushioned soles designed to provide maximum shock absorption and urban comfort.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>My Mart Athletic</td></tr>
+                            <tr><th scope="row">Sole</th><td>Rubber Air-Cushioned</td></tr>
+                            <tr><th scope="row">Upper</th><td>Breathable Knit Mesh</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-7" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-7" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Color Pop Runner">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Hot Deal</span>
+                    <h3 class="fw-bold mt-2">Color Pop Runner</h3>
+                    <h4 class="text-primary fw-bold">$95.00</h4>
+                    <p class="text-muted mt-3">Bright, ultra-lightweight running shoes crafted for confident motion and high visibility.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Brand</th><td>My Mart Sport</td></tr>
+                            <tr><th scope="row">Weight</th><td>180g (Ultra Light)</td></tr>
+                            <tr><th scope="row">Sizes</th><td>US 6 - US 12</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-8" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-8" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Velvet Bloom Fragrance">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Fresh Vibe</span>
+                    <h3 class="fw-bold mt-2">Velvet Bloom Fragrance</h3>
+                    <h4 class="text-primary fw-bold">$64.00</h4>
+                    <p class="text-muted mt-3">A soft floral fragrance infused with notes of jasmine, white tea, and vanilla blossom.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Volume</th><td>100ml / 3.4 fl oz</td></tr>
+                            <tr><th scope="row">Fragrance Type</th><td>Eau de Parfum</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-9" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-9" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Luna Glasses">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Premium Accent</span>
+                    <h3 class="fw-bold mt-2">Luna Glasses</h3>
+                    <h4 class="text-primary fw-bold">$110.00</h4>
+                    <p class="text-muted mt-3">Chic, UV400 protective sunglasses featuring lightweight, hand-polished acetate frames.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Frame Material</th><td>Hand-polished Acetate</td></tr>
+                            <tr><th scope="row">Protection</th><td>100% UV400 Protection</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-10" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-10" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Organic Strawberries">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Handpicked</span>
+                    <h3 class="fw-bold mt-2">Organic Strawberries</h3>
+                    <h4 class="text-primary fw-bold">$4.99</h4>
+                    <p class="text-muted mt-3">Sweet, juicy, and packed with vitamins straight from certified organic partner farms.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Weight</th><td>1 lb (454g) pack</td></tr>
+                            <tr><th scope="row">Origin</th><td>Local Organic Farms</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-11" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-11" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Ripe Pineapple">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Tropical</span>
+                    <h3 class="fw-bold mt-2">Ripe Pineapple</h3>
+                    <h4 class="text-primary fw-bold">$3.50</h4>
+                    <p class="text-muted mt-3">Perfectly ripened golden pineapples with absolute premium sweetness and rich tropical aroma.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Type</th><td>Golden Honey Pineapple</td></tr>
+                            <tr><th scope="row">Unit</th><td>Whole Fruit (~1.5kg)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-12" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-12" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Fresh Broccoli">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Nutrient Rich</span>
+                    <h3 class="fw-bold mt-2">Fresh Crunchy Broccoli</h3>
+                    <h4 class="text-primary fw-bold">$2.49</h4>
+                    <p class="text-muted mt-3">Vibrant green crisp crowns full of essential health benefits, vitamins C & K, and dietary fiber.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Weight</th><td>500g Crown</td></tr>
+                            <tr><th scope="row">Storage</th><td>Refrigerate up to 7 days</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-product-13" class="product-modal">
+        <div class="product-modal-content p-4">
+            <a href="#product-13" class="modal-close-btn" aria-label="Close">&times;</a>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 product-modal-img" alt="Vine Tomatoes">
+                </div>
+                <div class="col-md-7">
+                    <span class="product-badge mb-2">Farm Picked</span>
+                    <h3 class="fw-bold mt-2">Vine Tomatoes</h3>
+                    <h4 class="text-primary fw-bold">$1.99</h4>
+                    <p class="text-muted mt-3">Juicy, flavorful red tomatoes grown in optimal sunshine environments and harvested ripe on the vine.</p>
+                    <table class="table table-borderless table-striped small rounded-3 overflow-hidden mt-3">
+                        <tbody>
+                            <tr><th scope="row">Weight</th><td>1 lb (454g) Cluster</td></tr>
+                            <tr><th scope="row">Type</th><td>Red Vine Tomatoes</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-white border-top py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-dark">My Mart</h5>
+                    <p class="text-muted mt-3">Modern shopping made simple, beautiful, and effortless.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold text-dark">Shop</h6>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#products" class="text-decoration-none text-secondary">Products</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Deals</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">New arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold text-dark">Company</h6>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#about" class="text-decoration-none text-secondary">About</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-secondary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold text-dark">Follow us</h6>
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <a href="#" class="text-decoration-none text-secondary">Instagram</a>
+                        <a href="#" class="text-decoration-none text-secondary">Twitter</a>
+                        <a href="#" class="text-decoration-none text-secondary">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mt-4 pt-3 text-center text-muted small">
+                &copy; 2026 My Mart. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
